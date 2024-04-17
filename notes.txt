@@ -1,0 +1,2 @@
+to create react app => npm create vite@latest
+to run => npm run dev
