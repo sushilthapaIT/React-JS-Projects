@@ -1,12 +1,10 @@
 
-
-const Navbar = () => {
+const Navigation = () => {
 
     return(
-        <>
-        <nav>
+        <nav className="container">
             <div className="logo">
-                <img src="/image/brand-logo.png" alt="logo" />
+                <img src="/images/brand_logo.png" alt="logo" />
             </div>
 
             <ul>
@@ -18,10 +16,8 @@ const Navbar = () => {
 
             <button>Login</button>
         </nav>
-
-        </>
-    );
-
+        );
 }
 
-export default Navbar;
+
+export default Navigation
