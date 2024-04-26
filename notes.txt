@@ -1,2 +1,5 @@
 to create react app => npm create vite@latest
 to run => npm run dev
+
+
+to install react icon => npm install react-icons --save
