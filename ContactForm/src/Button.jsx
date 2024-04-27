@@ -1,11 +1,11 @@
-import './App.css'
+import './App.css';
 
-const Button = (props) => {
+const Button = ({ isOutline, icon, text, ...rest }) => {
     return (
         <>
-            <button className={props.isOutline ? styles.outline_btn : styles.primary_btn}>
-                {props.icon}
-                {props.text}
+            <button {...rest} className={isOutline ? "outline_btn" : "primary_btn"}>
+                {icon}
+                {text}
             </button>
         </>
     );
