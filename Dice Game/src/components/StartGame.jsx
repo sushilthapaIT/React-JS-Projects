@@ -2,23 +2,28 @@ import styled from 'styled-components'
 
 const StartGame = () => {
   return (
-    <container>
-      <img src='/images/dices.png' alt='dice image'/>
+    <Container>
+      <div>
+        <img src='dices.png' alt='dice image'/>
+      </div>
 
       <div>
         <h1>DICE GAME</h1>
         <Button>Play Now</Button>
 
       </div>
-    </container>
+    </Container>
   )
 }
 
 export default StartGame
 
 
-const container = styled.div`
+const Container = styled.div`
   max-width: 1180px;
+  display: flex;
+  margin: 0 auto;
+  height: 100vh;
 `;
 
 const Button = styled.button`
