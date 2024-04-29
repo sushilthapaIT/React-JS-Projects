@@ -10,7 +10,7 @@ const RollDice = () => {
         console.log(res)
      };
 
-     const roleDice = () => {
+     const rollDice = () => {
         const randomNum = genRandomNum(1, 7);
         setCurrentDice((prev) => randomNum)
      }
@@ -18,8 +18,8 @@ const RollDice = () => {
     return(
         <>
         <DiceContainer>
-            <div onClick={() => genRandomNum(1, 7)} className="dice">
-                <img src="./images/dice/dice_1.png" alt="dice 1" />
+            <div onClick={rollDice} className="dice">
+                <img src={`./images/dice/dice_${setCurrentDice}.png`} alt="dice 1" />
             </div>
             <p>Click on Dice to roll</p>
         </DiceContainer>
