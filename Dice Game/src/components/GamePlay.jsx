@@ -12,16 +12,6 @@ const GamePlay = () => {
 
     const [currentDice, setCurrentDice] = useState(1);
 
-    const genRandomNum = (min, max) => {
-        const res = Math.floor(Math.random() * (max - min) + min )
-        return res
-     };
-
-     const rollDice = () => {
-        const randomNum = genRandomNum(1, 7);
-        setCurrentDice((p) => randomNum)
-     };
-
     return(
         <MainContainer className="main-container">
             <div className="top-section">
