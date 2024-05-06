@@ -1,10 +1,11 @@
 import './App.css'
-import Recipe from './Recipe.JSX'
+import MainRecipe from './MainRecipe.jsx'
+
 function App() {
 
   return (
     <>
-      <Recipe />
+      <MainRecipe />
     </>
   )
 }
