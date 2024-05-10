@@ -21,12 +21,12 @@ const LoginSignup = () => {
 
             <div className="input">
                 <img src="" alt="" />
-                <input type="text" />
+                <input type="email" />
             </div>
-            
+
             <div className="input">
                 <img src="" alt="" />
-                <input type="text" />
+                <input type="password" />
             </div>
         </div>
         
