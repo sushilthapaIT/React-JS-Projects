@@ -1,6 +1,6 @@
 import './App.css'
+import ContactHeader from './components/ContactHeader/ContactHeader.jsx'
 import Navbar from './components/Navbar.jsx'
-import Header from './components/Header.jsx'
 
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
+      <ContactHeader />
     </>
 
   )
