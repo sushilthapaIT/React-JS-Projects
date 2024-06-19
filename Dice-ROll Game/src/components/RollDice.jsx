@@ -1,24 +1,16 @@
-// import styled from 'styled-components'
-
-// const RollDice = () => {
-//   return (
-//     <div>
-//       Roll DICE
-//     </div>
-//   )
-// }
-
-// export default RollDice
-
-
-import React from 'react'
+import styled from 'styled-components'
 
 const RollDice = () => {
   return (
-    <div>
-      
-    </div>
+    <MainContent>
+      Roll DICE
+    </MainContent>
   )
 }
 
 export default RollDice
+
+
+const MainContent = styled.div`
+  
+`
