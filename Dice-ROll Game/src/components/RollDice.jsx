@@ -14,7 +14,3 @@ export default RollDice
 const MainContent = styled.div`
   
 `
-
-const SideContent = styled.div`
-  
-`
