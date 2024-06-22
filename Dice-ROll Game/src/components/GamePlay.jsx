@@ -3,7 +3,7 @@ import NumberSelector from './NumberSelector'
 import styled from 'styled-components'
 import RollDice from './RollDice'
 import { useState } from 'react'
-import { Button } from '../styled/Button'
+import { Button, OutlineButton } from '../styled/Button'
 
 const GamePlay = () => {
 
@@ -14,6 +14,10 @@ const GamePlay = () => {
 
   const generateRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);  
+  }
+
+  const resetScore = () => {
+    setScore(0);
   }
 
   const rollDice = () => {
@@ -46,7 +50,7 @@ const GamePlay = () => {
       </div>
       <RollDice currentDice={currentDice} rollDice={rollDice}/>
       <div className='buttons'>
-        <Button>Reset</Button>
+        <OutlineButton onClick={{resetScore}}>Reset</OutlineButton>
         <Button>Show Rules</Button>
       </div>
     </MainContainer>
