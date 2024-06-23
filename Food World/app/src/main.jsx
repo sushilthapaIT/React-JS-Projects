@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  body{
+    background-color: #323334;
+    color: white;
+    min-height: 100vh;
+  }
 `
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
