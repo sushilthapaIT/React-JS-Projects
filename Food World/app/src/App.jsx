@@ -60,10 +60,10 @@ const FilterContainer = styled.section`
   gap: 12px;
 `
 
-const Button = styled.button`
-  background: #ff4343;
-  border-radius: 5px;
-  padding: 6px 12px;
-  border: none;
-  color: white;
-`
+// const Button = styled.button`
+//   background: #ff4343;
+//   border-radius: 5px;
+//   padding: 6px 12px;
+//   border: none;
+//   color: white;
+// `
