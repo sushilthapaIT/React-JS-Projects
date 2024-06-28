@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import SearchResult from './components/SearchResult/SearchResult';
 
-const BASE_URL = "http://localhost:9000";
+export const BASE_URL = "http://localhost:9000/"; // so that we can use this url in another component as well
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         setLoading(false); 
       }
     };
-    fetchFoodData();
+    fetchFoodData(data);
   }, []); 
 
   if (error) {
@@ -53,9 +54,7 @@ function App() {
           <Button>Dinner</Button>
         </FilterContainer>
 
-        {/* <FoodContainer>
-          <FoodCards></FoodCards>
-        </FoodContainer> */}
+        <SearchResult data={data}/>
       </Container>
     </>
   )
@@ -104,12 +103,3 @@ const Button = styled.button`
   color: white;
 `;
 
-const FoodCardContainer = styled.section`
-  background-image: url("/bg.png");
-  height: calc(100vh - 210px);
-  background-size: cover;
-`;
-
-// const FoodCards = styled.div`
-
-// `;
