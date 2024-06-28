@@ -21,6 +21,10 @@ function App() {
           <Button>Lunch</Button>
           <Button>Dinner</Button>
         </FilterContainer>
+
+        <FoodContainer>
+          <FoodCards></FoodCards>
+        </FoodContainer>
       </Container>
     </>
   )
@@ -32,7 +36,7 @@ export default App
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+`;
 
 const TopContainer = styled.section`
   min-height: 140px;
@@ -52,18 +56,26 @@ const TopContainer = styled.section`
       padding: 0 10px;
     }
   }
-`
+`;
 
 const FilterContainer = styled.section`
   display: flex;
   justify-content: center;
   gap: 12px;
-`
+`;
 
-// const Button = styled.button`
-//   background: #ff4343;
-//   border-radius: 5px;
-//   padding: 6px 12px;
-//   border: none;
-//   color: white;
-// `
+const Button = styled.button`
+  background: #ff4343;
+  border-radius: 5px;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+`;
+
+const FoodCardContainer = styled.section`
+  background-image: url("/bg.png");
+`;
+
+const FoodCards = styled.div`
+
+`;
