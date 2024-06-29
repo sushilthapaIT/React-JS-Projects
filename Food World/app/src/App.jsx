@@ -1,3 +1,6 @@
+// project completed
+// 2023/06/29
+
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import SearchResult from './components/SearchResult/SearchResult';

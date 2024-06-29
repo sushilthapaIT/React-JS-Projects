@@ -1,3 +1,6 @@
+// project completed
+// 2023/06/29
+
 import styled from "styled-components";
 import { BASE_URL, Button, Container } from "../../App";
 
