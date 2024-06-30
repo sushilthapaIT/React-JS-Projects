@@ -3,3 +3,5 @@ to run => npm run dev
 
 
 to install react icon => npm install react-icons --save
+
+to install tailwindcss in reacr => npm install -D tailwindcss postcss autoprefixer
