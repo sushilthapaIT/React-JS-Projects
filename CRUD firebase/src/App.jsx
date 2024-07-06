@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {FiSearch} from "react-icons/fi";
 import {AiFillPlusCircle} from "react-icons/ai"
 import Nav from './components/Nav';
+import { collection, getDoc } from 'firebase/firestore';
+import {db} from "./config/firebase";
 
 const App = () => {
+
+  const [contacts, setContacts] = useState([]);
+
+  useEffect(() => {
+
+    const getContacts = async () => {
+      try{
+        const contactsRef = collection(db, "contacts");
+        const contactsSnapShot = await getDoc(contactsRef);
+        const contactLists = contacts.Snapshot.docs.map((doc) => doc.data());
+        console.log(contactsSnapShot)
+      }
+      catch (error){
+        console.log("Error!!!", error);
+      }
+    }
+
+    getContacts();
+  }, [])
   return (
     <>
     <div className='max-w-[370px] mx-auto px-4'>
