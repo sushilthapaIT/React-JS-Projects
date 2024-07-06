@@ -1,10 +1,11 @@
 import React from 'react'
+import Nav from './components/Nav';
 
 const App = () => {
   return (
-    <div>
-      red
-    </div>
+    <>
+    <Nav />
+    </>
   )
 }
 
