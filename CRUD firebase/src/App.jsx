@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { FiSearch } from "react-icons/fi";
 import { AiFillPlusCircle } from "react-icons/ai";
-import {HiOutlineUserCircle} from "react-icons/hi"
+import {HiOutlineUserCircle} from "react-icons/hi";
+import {IoMdTrash} from 'react-icons/io';
+import {RiEditCircleLine} from 'react-icons/ri';
 import Nav from './components/Nav';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "./config/firebase";
@@ -45,7 +47,14 @@ const App = () => {
           {contacts.map((contact) => (
             <div key={contact.id}>
               <HiOutlineUserCircle />
-              {/* You can display other contact details here */}
+              <div className='text-white'>
+                <h2 className=''>{contact.name}</h2>
+                <p className=''>{contact.email}</p>
+              </div>
+              <div>
+                <RiEditCircleLine />
+                <IoMdTrash />
+              </div>
             </div>
           ))}
         </div>
