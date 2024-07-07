@@ -7,6 +7,7 @@ import {RiEditCircleLine} from 'react-icons/ri';
 import Nav from './components/Nav';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "./config/firebase";
+import ContactCard from './components/ContactCard';
 
 const App = () => {
 
@@ -43,21 +44,9 @@ const App = () => {
           </div>
           <AiFillPlusCircle className='text-5xl cursor-pointer text-white' />
         </div>
-        <div>
+        <div className='mt-4'>
           {contacts.map((contact) => (
-            <div key={contact.id} className='bg-yellow flex justify-around p-2 rounded-lg'>
-                <div className='flex gap-1'>
-                  <HiOutlineUserCircle className='text-orange text-4xl'/>
-                  <div className=''>
-                    <h2 className='font-medium'>{contact.name}</h2>
-                    <p className='text-sm'>{contact.email}</p>
-                </div>
-            </div>
-              <div className='flex text-3xl'>
-                <RiEditCircleLine />
-                <IoMdTrash className='text-orange'/>
-              </div>
-            </div>
+            <ContactCard contact={contact} key={contact.id}/>
           ))}
         </div>
       </div>
