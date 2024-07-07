@@ -45,17 +45,17 @@ const App = () => {
         </div>
         <div>
           {contacts.map((contact) => (
-            <div key={contact.id} className='bg-yellow'>
-              <div>
-              <HiOutlineUserCircle className='text-orange text-4xl'/>
-              <div className=''>
-                <h2 className=''>{contact.name}</h2>
-                <p className=''>{contact.email}</p>
-              </div>
-              </div>
-              <div>
+            <div key={contact.id} className='bg-yellow flex justify-around p-2 rounded-lg'>
+                <div className='flex gap-1'>
+                  <HiOutlineUserCircle className='text-orange text-4xl'/>
+                  <div className=''>
+                    <h2 className='font-medium'>{contact.name}</h2>
+                    <p className='text-sm'>{contact.email}</p>
+                </div>
+            </div>
+              <div className='flex text-3xl'>
                 <RiEditCircleLine />
-                <IoMdTrash />
+                <IoMdTrash className='text-orange'/>
               </div>
             </div>
           ))}
