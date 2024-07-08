@@ -44,7 +44,7 @@ const App = () => {
           </div>
           <AiFillPlusCircle className='text-5xl cursor-pointer text-white' />
         </div>
-        <div className='mt-4'>
+        <div className='mt-4 gap-3 flex flex-col'>
           {contacts.map((contact) => (
             <ContactCard contact={contact} key={contact.id}/>
           ))}
