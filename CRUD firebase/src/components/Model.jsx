@@ -1,11 +1,13 @@
-import React from 'react'
+// import React from 'react'
 
-const Model = () => {
-  return (
-    <div>
+// const Model = () => {
+//   return (
+//     <div>
+
+
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Model
+// export default Model
