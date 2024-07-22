@@ -17,6 +17,7 @@ function App() {
             <li>Ontario</li>
             <li>Washington DC</li>
             <li>Denver</li>
+            <li>Beijing</li>
           </ul>
         </div>
       </div>
