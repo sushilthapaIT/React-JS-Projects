@@ -11,13 +11,19 @@ function App() {
 
         <div className="question-card">
           <h2>Question 1 out of 5</h2>
-          <h3>What is the capital of USA?</h3>
+          <h3 className="question-text">What is the capital of USA?</h3>
           <ul>
             <li>Boston</li>
             <li>Ontario</li>
             <li>Washington DC</li>
             <li>Denver</li>
           </ul>
+        </div>
+
+        <div className="final-results">
+          <h1>Final Results</h1>
+          <h2>1 out of 5 correct - (20%)</h2>
+          <button>Restart Game</button>
         </div>
       </div>
     </>

@@ -26,3 +26,21 @@ li{
   font-size: 20px;
   margin-top: 8px;
 }
+
+.question-text{
+  color: darkblue;
+  font-size: 25px;
+}
+
+.final-results{
+  margin: 0 auto;
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  width: 50%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
