@@ -53,6 +53,20 @@ function App() {
         ],
       },
     ];  
+
+  const optionClicked = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+
+    if (currentQuestion + 1 < questions.length){
+      setCurrentQuestion(currentQuestion + 1);
+    }
+    else{
+      setFinalResult(true);
+    }
+
+  }
   
   return (
     <>
@@ -63,18 +77,18 @@ function App() {
         (
         <div className="final-results">
           <h1>Final Results</h1>
-          <h2>1 out of 5 correct - (20%)</h2>
-          <button>Restart Game</button>
+          <h2>{score} out of {questions.length} correct - ({(score/questions.length) * 100}%)</h2>
+          <button onClick={() => restartGame()}>Restart Game</button>
         </div>
         )
         :
         (         
         <div className="question-card">
           <h2>Question {currentQuestion + 1} out of {questions.length}</h2>
-          <h3 className="question-text">What is the capital of USA?</h3>
-          <ul>
-            {questions[currentQuestion].options.map((option) => (
-              <li key={option.text}>{option.text}</li>
+          <h3 className="question-text">{questions[currentQuestion].text}</h3>
+          <ul> 
+            {questions[currentQuestion].options.map((option) => ( // mapping each elements to show options dynamically
+              <li onClick={() => optionClicked(option.isCorrect)} key={option.id}>{option.text}</li>
             ))}
           </ul>
         </div> 
