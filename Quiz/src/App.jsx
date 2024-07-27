@@ -66,7 +66,7 @@ function App() {
       setFinalResult(true);
     }
 
-  }
+  } 
 
   const restartGame = () => {
     setScore(0);
@@ -78,12 +78,15 @@ function App() {
     <>
       <div className="App">
         <h1>Quiz App</h1>
-        <h2>Current Score: 2</h2>
+        <h2>Current Score: {score}</h2>
         {showFinalResult ?     // conditional rendering     
         (
         <div className="final-results">
           <h1>Final Results</h1>
-          <h2>{score} out of {questions.length} correct - ({(score/questions.length) * 100}%)</h2>
+          <h2>
+            {score} out of {questions.length} correct - (
+            {(score / questions.length) * 100}%)
+          </h2>          
           <button onClick={() => restartGame()}>Restart Game</button>
         </div>
         )
