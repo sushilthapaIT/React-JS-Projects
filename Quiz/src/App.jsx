@@ -73,10 +73,9 @@ function App() {
           <h2>Question {currentQuestion + 1} out of {questions.length}</h2>
           <h3 className="question-text">What is the capital of USA?</h3>
           <ul>
-            <li>Boston</li>
-            <li>Ontario</li>
-            <li>Washington DC</li>
-            <li>Denver</li>
+            {questions[currentQuestion].options.map((option) => (
+              <li key={option.text}>{option.text}</li>
+            ))}
           </ul>
         </div> 
         )}
