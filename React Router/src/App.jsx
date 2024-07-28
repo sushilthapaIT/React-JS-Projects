@@ -1,4 +1,5 @@
 import './App.css'
+import About from './components/About'
 import Home from './components/Home'
 import Login from './components/Login'
 import Navbar from './components/Navbar'
@@ -14,12 +15,17 @@ function App() {
     {
       path: "/login",
       element: <Login/>
+    },
+    {
+      path: "/about",
+      element: <About/>
     }
   ])
 
   return (
     <>
       <Navbar />
+
     </>
   )
 }
