@@ -1,17 +1,23 @@
 import React from 'react'
 import {createBrowserRouter} from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
     return (
     <div>
-      <ul>
-        <Link to='/home'><li>Home</li></Link>
-        <Link to='/about'><li>About</li></Link>
-        <Link to='/login'><li>Login</li></Link>
-      </ul>
-    </div>
+        <ul>
+          <li>
+            <NavLink onClick={() => {document.title = "Home"}} className={(e) => (e.isActive ? 'red' : '')} to='/home'>Home</NavLink>
+          </li>
+          <li>
+            <NavLink onClick={() => {document.title = "Home"}} className={(e) => (e.isActive ? 'red' : '')} to='/about'>About</NavLink>
+          </li>
+          <li>
+            <NavLink onClick={() => {document.title = "Home"}} className={(e) => (e.isActive ? 'red' : '')} to='/login'>Login</NavLink>
+          </li>
+        </ul>
+      </div>
   )
 }
 
