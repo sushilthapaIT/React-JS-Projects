@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Navbar from './components/Navbar'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Trail from './components/Trail'
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
     {
       path: "/about",
       element: <><Navbar/><About/></>
+    },
+    {
+      path: "/trail",
+      element: <><Navbar/><Trail/></>
     }
   ])
 
